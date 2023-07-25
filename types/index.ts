@@ -10,6 +10,7 @@ export interface CustomButtonProps {
     isDisabled?:boolean;
 }
 
+
 export interface SearchManuFacturerProps {
     manufacturer: string;
     setManuFacturer: (manufacturer: string) => void;
@@ -50,4 +51,8 @@ export interface SearchManuFacturerProps {
   export interface ShowMoreProps {
     pageNumber: number;
     isNext: boolean;
+  }
+
+  export interface HomeProps {
+    searchParams: FilterProps;
   }
