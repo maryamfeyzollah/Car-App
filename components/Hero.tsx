@@ -13,16 +13,15 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title">
-          Find, book, rent a car—quick and super easy!
+        <h1 className="hero__title justify-center text-right">
+          پیدا کنید، رزرو کنید، یک ماشین را کرایه کنید
         </h1>
-        <p className="hero__subtitle">
-          Streamline your car rental experience with our effortless booking
-          process.
+        <p className="hero__subtitle text-right ">
+          با رزرو بدون زحمت ، تجربه کرایه اتومبیل خود را ساده کنید
         </p>
         <CustomButton
-          title="Explore Cars"
-          containerStyles="bg-primary-blue text-white rounded-full mt-10"
+          title="جستجو ماشین"
+          containerStyles="bg-primary-blue text-white rounded-full mt-10 float-right "
           handleClick={handleScroll}
         />
       </div>

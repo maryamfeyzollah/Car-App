@@ -43,7 +43,7 @@ export const manufacturers = [
   ];
   
   export const yearsOfProduction = [
-    { title: "Year", value: "" },
+    { title: "سال ساخت", value: "" },
     { title: "2015", value: "2015" },
     { title: "2016", value: "2016" },
     { title: "2017", value: "2017" },
@@ -57,40 +57,40 @@ export const manufacturers = [
   
   export const fuels = [
     {
-      title: "Fuel",
+      title: "سوخت",
       value: "",
     },
     {
-      title: "Gas",
+      title: "بنزینی",
       value: "Gas",
     },
     {
-      title: "Electricity",
+      title: "الکتریکی ",
       value: "Electricity",
     },
   ];
   
   export const footerLinks = [
     {
-      title: "About",
+      title: "درباره ما",
       links: [
-        { title: "How it works", url: "/" },
-        { title: "Featured", url: "/" },
-        { title: "Partnership", url: "/" },
-        { title: "Bussiness Relation", url: "/" },
+        { title: "آموزش سایت", url: "/" },
+        { title: "امکانات", url: "/" },
+        { title: "همکاری با ما", url: "/" },
+     
       ],
     },
     {
-      title: "Company",
+      title: "شرکت",
       links: [
-        { title: "Events", url: "/" },
-        { title: "Blog", url: "/" },
-        { title: "Podcast", url: "/" },
-        { title: "Invite a friend", url: "/" },
+        { title: "رویداد ها", url: "/" },
+        { title: "بلاگ", url: "/" },
+        { title: "محصولات", url: "/" },
+        { title: " دعوت دوستان ", url: "/" },
       ],
     },
     {
-      title: "Socials",
+      title: "شبکه اجتماعی",
       links: [
         { title: "Discord", url: "/" },
         { title: "Instagram", url: "/" },

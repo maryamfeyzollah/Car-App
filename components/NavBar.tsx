@@ -17,12 +17,12 @@ const NavBar = () => {
         </Link>
         <div className="flex gap-3 ">
           <CustomButton
-            title="Log In"
+            title="ثبت نام"
             btnType="button"
             containerStyles="text-white text-xs xl:text-base md:text-base font-semibold rounded-xl bg-primary-blue md:min-w-[90px]"
           />
           <CustomButton
-            title="Sign In"
+            title="ورود"
             btnType="button"
             containerStyles="text-primary-blue text-xs xl:text-base md:text-base font-semibold rounded-xl bg-white md:min-w-[90px]"
           />

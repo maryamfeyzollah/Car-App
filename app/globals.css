@@ -1,14 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Vazir";
+  src: url("../public/Vazir.eot");
+  src: url("../public/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../public/Vazir.woff2") format("woff2"),
+    url("../public/Vazir.woff") format("woff"),
+    url("../public/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
+  font-family: Vazir;
+}
+body {
+  font-family: Vazir;
 }
 
 /* START: General styles */
@@ -43,11 +55,11 @@
 }
 
 .hero__title {
-  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+  @apply 2xl:text-[72px] sm:text-[50px] text-[30px] font-extrabold;
 }
 
 .hero__subtitle {
-  @apply text-[27px] text-black-100 font-light mt-5;
+  @apply text-[20px] text-black-100 font-light mt-5;
 }
 
 .hero__image-container {
@@ -66,7 +78,7 @@
 /* START: Home styles */
 
 .home__text-container {
-  @apply flex flex-col items-start justify-start gap-y-2.5 text-black-100;
+  @apply flex flex-col items-end justify-end gap-y-2.5 text-black-100;
 }
 
 .home__filters {
@@ -166,11 +178,11 @@
 }
 
 .footer__rights {
-  @apply flex flex-col justify-start items-start gap-6;
+  @apply flex flex-col justify-end items-end gap-6;
 }
 
 .footer__links {
-  @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
+  @apply flex-1 w-full flex md:justify-end  flex-wrap max-md:mt-10 gap-20;
 }
 
 .footer__link {

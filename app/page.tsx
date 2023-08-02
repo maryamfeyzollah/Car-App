@@ -14,17 +14,19 @@ export default async function Home({ searchParams }: HomeProps) {
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden ">
       <Hero />
       <div className="mt-12 padding-x padding-y max-width" id="discover">
-        <div className="home__text-container">
-          <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
-          <p>Explore out cars you might like</p>
+        <div className="home__text-container ">
+          <h1 className="text-4xl font-extrabold">کاتالوگ ماشین</h1>
+          <p className="text-right">
+            ماشین هایی را که ممکن است دوست داشته باشید را جستجو کنید
+          </p>
         </div>
         <div className="home__filters">
           <SearchBar />
 
-          <div className="home__filter-container">
+          <div className="home__filter-container ">
             <CustomFilter title="fuel" options={fuels} />
             <CustomFilter title="year" options={yearsOfProduction} />
           </div>
@@ -43,7 +45,7 @@ export default async function Home({ searchParams }: HomeProps) {
           </section>
         ) : (
           <div className="home__error-container">
-            <h2 className="text-black text-xl font-bold">Oops, no results</h2>
+            <h2 className="text-black text-xl font-bold">اطلاعاتی یافت نشد.</h2>
             <p>{allCars?.message}</p>
           </div>
         )}

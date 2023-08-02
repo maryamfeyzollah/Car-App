@@ -14,8 +14,7 @@ const Footer = () => (
           className="object-contain"
         />
         <p className="text-base text-gray-700">
-          Car App <br />
-          All Rights Reserved &copy;
+          سایت اجاره ماشین <br />
         </p>
       </div>
 
@@ -40,14 +39,14 @@ const Footer = () => (
     </div>
 
     <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10">
-      <p>@ Car App . All rights reserved</p>
+      <p>طراحی و پیاده سازی | مریم فیض اله</p>
 
       <div className="footer__copyrights-link">
         <Link href="/" className="text-gray-500">
-          Privacy & Policy
+          حریم خصوصی
         </Link>
         <Link href="/" className="text-gray-500">
-          Terms & Condition
+          قوانین و مقررات
         </Link>
       </div>
     </div>

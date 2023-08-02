@@ -28,12 +28,10 @@ const CarCard = ({ car }: CarCardProps) => {
       </div>
 
       <p className="flex mt-6 text-[32px] leading-[38px] font-extrabold">
-        <span className="self-start text-[14px] leading-[17px] font-semibold">
-          $
-        </span>
+       
         {carRent}
-        <span className="self-end text-[14px] leading-[17px] font-medium">
-          /day
+        <span className="self-end text-[14px] px-3 font-semibold">
+        /روز
         </span>
       </p>
 
@@ -58,7 +56,7 @@ const CarCard = ({ car }: CarCardProps) => {
             />
 
             <p className="text-[14px] leading-[17px]">
-              {transmission === "a" ? "Automatic" : "Manual"}
+              {transmission === "a" ? "اتوماتیک" : "دنده ای"}
             </p>
           </div>
           <div className="car-card__icon">
@@ -67,13 +65,13 @@ const CarCard = ({ car }: CarCardProps) => {
           </div>
           <div className="car-card__icon">
             <Image src="/gas.svg" width={20} height={20} alt="seat" />
-            <p className="car-card__icon-text">{city_mpg} MPG</p>
+            <p className="car-card__icon-text">{city_mpg} لیتر</p>
           </div>
         </div>
 
         <div className="car-card__btn-container">
           <CustomButton
-            title="View More"
+            title="نمایش بیشتر"
             containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
             textStyles="text-white text-[14px] leading-[17px] font-bold"
             rightIcon="/right-arrow.svg"
